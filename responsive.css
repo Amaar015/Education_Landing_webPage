@@ -1,0 +1,53 @@
+@media(max-width:768px) {
+    html {
+        font-size: 50%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header nav {
+        position: fixed;
+        top: -120%;
+        left: 0;
+        height: calc(100vh-5rem);
+        width: 100vw;
+        background: #fff;
+    }
+
+    header nav.nav-toggle {
+        top: 7.6rem;
+    }
+
+    header nav ul {
+        height: 100%;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    header nav ul li {
+        margin: 2rem 0;
+    }
+
+    header nav ul li a {
+        font-size: 3rem;
+    }
+
+    #home {
+        animation: none;
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('./images/abc.jpeg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    #home .content {
+        text-shadow: 0.1rem 0.1rem 0.3rem #333;
+    }
+
+    #home .content .icons {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
